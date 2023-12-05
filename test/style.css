@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.cont {
+  max-width: 700px;
+  margin: 0 auto;
+
+  height: 700px;
+  border: 2px solid;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "d1 dd2 d2"
+    "d2  dd2 div5"
+    "d3  d3 div5";
+  gap: 10px;
+}
+
+.div5 {
+  background-color: skyblue;
+  grid-area: div5;
+}
+
+.div3 {
+  background-color: slateblue;
+  grid-area: d3;
+}
+
+.div4 {
+  background-color: springgreen;
+  grid-area: dd2;
+}

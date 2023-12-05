@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "style.scss",
+        "__variables.scss",
+        "__mixins.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

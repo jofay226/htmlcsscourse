@@ -1,0 +1,111 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: coral;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+}
+
+.parent {
+  margin-top: 100px;
+  width: 500px;
+  height: 500px;
+  border: 2px solid;
+  background-color: cadetblue;
+}
+
+.child {
+  width: 150px;
+  height: 150px;
+  border: 2px solid;
+}
+
+.child1 {
+  background-color: coral;
+  z-index: 2;
+  position: relative;
+}
+
+.child2 {
+  position: relative;
+  top: -100px;
+  left: 100px;
+  background-color: cornflowerblue;
+  z-index: 5;
+}
+
+.child3 {
+  position: relative;
+  top: -150px;
+  left: 200px;
+  background-color: darkgreen;
+  z-index: 6;
+}
+
+.bullet {
+  border: 2px solid blue;
+}
+
+.bullet > li {
+  border: 2px solid red;
+}
+
+.num {
+  border: 2px solid green;
+}
+
+.num > li {
+  border: 2px solid salmon;
+}
+
+.mid {
+  margin-top: 100px;
+  border: 5px solid blue;
+  height: 1000px;
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  border: 2px solid green;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 100px;
+}
+
+.card > img {
+  width: 100%;
+  height: 150px;
+}
+
+.card > a {
+  text-decoration: none;
+  font-size: 20px;
+  color: blueviolet;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.card2 {
+  border: 2px solid forestgreen;
+  width: 300px;
+}

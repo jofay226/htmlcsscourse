@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.parent {
+  width: 700px;
+  height: 700px;
+  border: 5px solid;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "child1 child2 child2 child3"
+    "child1 child4 child5 child8"
+    "child1 child6 child7 child8";
+  gap: 20px;
+}
+
+.child1 {
+  grid-area: child1;
+  background-color: red;
+}
+
+.child2 {
+  grid-area: child2;
+  background-color: green;
+}
+
+.child3 {
+  grid-area: child3;
+  background-color: hotpink;
+}
+
+.child8 {
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 2;
+  z-index: 3;
+}
